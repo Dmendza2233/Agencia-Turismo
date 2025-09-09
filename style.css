@@ -1,0 +1,286 @@
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 200;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+h1 {
+    font-size: 3.5em;
+}
+
+h2 {
+    font-size: 2.5em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+p,
+a {
+    font-family: sans-serif;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+button {
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+button:hover {
+    background-color: #0056b3;
+    background-position: center;
+}
+
+.container a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 5px;
+}
+
+header {
+    background-color: rgb(26, 25, 25);
+    border-radius: 15px;
+    margin: 0px 0px 10px;
+}
+
+header .logo {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 1.5em;
+    padding: 25px 30px;
+    margin: 0;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+    gap: 10px;
+}
+
+@media (min-width: 768px) {
+    nav {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    left: 0;
+    bottom: -5px;
+    background: #a8adb3;
+    transition: width 0.3s ease;
+}
+
+nav a:hover {
+    color: #a1a8ae;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+#hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 84vh;
+    text-align: center;
+    border-radius: 15px;
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.3)), url(img/simea-kZhFTlf8YDI-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+
+#quienes-somos{
+    background: #cfd1df;
+    border-radius: 15px;
+    margin: 10px 0px 10px 0px;
+}
+
+#quienes-somos .container {
+    text-align: center;
+    padding: 100px 15px;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+#nuestro-sevicio {
+    background-color: rgb(26, 25, 25);
+    color: white;
+    text-align: center;
+    border-radius: 15px;
+}
+
+#nuestro-sevicio .container {
+    padding: 70px 0px;
+}
+
+#nuestro-sevicio h2 {
+    font-size: 3em;
+    margin-top: 0px;
+}
+
+#nuestro-sevicio .carta {
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+    border-radius: 15px;
+    margin: 20px;
+}
+
+.carta:nth-child(2) {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.3)), url(img/hamza-erbay-4qYYGxlbIXA-unsplash.jpg);
+}
+
+.carta:nth-child(3) {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.3)), url(img/john-torcasio-287pMN07JUQ-unsplash.jpg
+);
+
+}
+
+.carta:nth-child(4) {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.3)), url(img/ahmet-yuksek-cF6JhOZFHKU-unsplash.jpg
+);
+}
+
+.solicitar_tour {
+    border-radius: 15px;
+    height: 30vh;
+    margin: 10px 0px 10px 0px;
+    padding: 50px;
+    width: auto;
+    text-align: center;
+    background: #cfd1df;
+}
+
+·nuestro-sevicio P {
+    display: none;
+}
+
+.Contactanos {
+    border-radius: 30px;
+    margin: 20px 0px 20px 0px;
+    padding: 50px;
+    color: white;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(26, 25, 25);
+    width: auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-position: center;
+}
+
+
+input,
+textarea {
+    width: 60%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+}
+
+form textarea {
+    height: 120px;
+    resize: none;
+}
+
+.button1 {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.button1:hover {
+    background: #0056b3;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.visitanos{
+    background: #cfd1df;
+    text-align: center;
+    margin: 10px 0px 10px 0px;
+    border-radius: 15px;
+    padding: 50px;
+    box-sizing: content-box;
+    height: 40vh;
+    line-height: 1.6;
+    font-size: 18px;
+}
+
+
+footer {
+    border-radius: 15px;
+    background-color: rgb(26, 25, 25);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 20PX;
+    margin-top: 30PX;
+}
+
+.scroll button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background: #0e82d4;
+    border: none;
+    border-radius: 20%;
+    cursor: pointer;
+}
+
+.scroll a {
+    color: aliceblue;
+    font-weight: 900;
+    text-decoration: none;
+}
